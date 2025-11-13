@@ -1,14 +1,25 @@
 public class User {
     private String email;
     private String password;
-    private int  ID;
-    private Boolean isReception;
-    private Boolean isManager;
+    private int  userID;
     
-    public void User(String email, String password, int ID){
+    
+    
+    public User(String email, String password, int userID){
         this.email = email;
         this.password = password;
-        this.ID = ID;
-        
+        this.userID = userID;
+    }
+
+    public String getMail(){
+        return email;
+    }
+
+    public String getPassword(){
+        return password;
+    }
+
+    public int getID(){
+        return userID;
     }
 }
