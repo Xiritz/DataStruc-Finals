@@ -98,8 +98,7 @@ public class Authenticator {
         int age = scn.nextInt();
         scn.nextLine(); 
         System.out.print("Enter Contact Number: ");
-        int contactNumber = scn.nextInt();
-        scn.nextLine(); 
+        String contactNumber = scn.nextLine();
 
         int newUserID = (int)(Math.random() * 90000 + 10000); 
 

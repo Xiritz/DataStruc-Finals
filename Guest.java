@@ -1,10 +1,10 @@
 public class Guest extends User {
 
-    private String fullName, adress;
-    private int age, contactNumber;
+    private String fullName, adress, contactNumber;
+    private int age;
     
     
-    public Guest(String email, String password, int userID, String fullName, String adress, int age, int contactNumber){
+    public Guest(String email, String password, int userID, String fullName, String adress, int age, String contactNumber){
         super(email, password, userID);
 
         this.fullName = fullName;
@@ -24,7 +24,7 @@ public class Guest extends User {
         return age;
         }
 
-        public int getContactNumber() {
+        public String getContactNumber() {
         return contactNumber;
         }
 
@@ -40,7 +40,7 @@ public class Guest extends User {
         this.age = age;
         }
 
-        public void setContactNumber(int contactNumber) {
+        public void setContactNumber(String contactNumber) {
         this.contactNumber = contactNumber;
         }
 }

@@ -1,9 +1,9 @@
 public class Manager extends User {
 
-    private String fullName, adress;
-    private int age, contactNumber, employeeID;
+    private String fullName, adress, contactNumber;
+    private int age, employeeID;
 
-    public Manager(String email, String password, int userID, String fullName, String adress, int age, int contactNumber, int employeeID){
+    public Manager(String email, String password, int userID, String fullName, String adress, int age, String contactNumber, int employeeID){
         super(email, password, userID);
 
         this.fullName = fullName;
