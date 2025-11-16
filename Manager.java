@@ -13,5 +13,9 @@ public class Manager extends User {
         this.employeeID = employeeID;
 
     }
+
+    public String getManagerFullName(String fullName){
+        return fullName;
+    }
     
 }
