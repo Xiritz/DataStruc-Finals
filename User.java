@@ -2,6 +2,7 @@ public class User {
     private String email;
     private String password;
     private int  userID;
+    private String fullName;
     
     
     
@@ -21,5 +22,9 @@ public class User {
 
     public int getID(){
         return userID;
+    }
+    
+    public String getFullName(){
+        return fullName;
     }
 }

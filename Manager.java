@@ -14,8 +14,8 @@ public class Manager extends User {
 
     }
 
-    public String getManagerFullName(String fullName){
-        return fullName;
+    public String getManagerFullName(){
+        return this.fullName;
     }
     
 }

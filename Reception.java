@@ -13,7 +13,8 @@ public class Reception extends User {
         this.employeeID = employeeID;
 
     }
-    public String getReceptionFullName(String fullName){
-        return fullName;
+    public String getFullName(){
+        return this.fullName;
     }
+    
 }
