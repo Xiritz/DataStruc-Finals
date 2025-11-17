@@ -1,8 +1,7 @@
-public class User {
+public abstract class User { 
     private String email;
     private String password;
     private int  userID;
-    private String fullName;
     
     
     
@@ -24,7 +23,5 @@ public class User {
         return userID;
     }
     
-    public String getFullName(){
-        return fullName;
-    }
+    public abstract String toCSVString();
 }

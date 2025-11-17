@@ -1,8 +1,20 @@
 import java.util.*;
 import java.util.regex.*;
+import java.io.*; // Import for file handling
 
 public class Authenticator {
     static private Scanner scn = new Scanner(System.in);
+
+    // --- NEW ---
+    // A private variable to hold the file handler
+    private UserFileHandler fileHandler;
+
+    // --- NEW CONSTRUCTOR ---
+    // This receives the file handler from Main.java
+    public Authenticator(UserFileHandler handler) {
+        this.fileHandler = handler;
+    }
+    // --- END NEW ---
 
     public User authenticator(ArrayList<User> allUsers) {
         while (true) {
@@ -104,8 +116,12 @@ public class Authenticator {
 
         Guest newGuest = new Guest(email, password, newUserID, fullName, address, age, contactNumber);
 
+        // 1. Add to the *in-memory* list for this session
         allUsers.add(newGuest);
 
+        // 2. --- THIS IS THE SAVE ---
+        // Save to the *physical file* for next time
+        fileHandler.saveNewUser(newGuest);
 
         System.out.println("Registration successful! Your new UserID is " + newUserID);
         System.out.println("Please log in to continue.");

@@ -12,36 +12,43 @@ public class Guest extends User {
         this.age=age;
         this.contactNumber = contactNumber;
     }
-        public String getFullName(){
-        return fullName;
-        }
+    public String getFullName(){
+    return fullName;
+    }
 
-        public String getAdress() {
-        return adress;
-        }
+    public String getAdress() {
+    return adress;
+    }
 
-        public int getAge() {
-        return age;
-        }
+    public int getAge() {
+    return age;
+    }
 
-        public String getContactNumber() {
-        return contactNumber;
-        }
+    public String getContactNumber() {
+    return contactNumber;
+    }
 
-         public void setFullName(String fullName) {
-        this.fullName = fullName;
-        }
+     public void setFullName(String fullName) {
+    this.fullName = fullName;
+    }
 
-        public void setAdress(String adress) {
-        this.adress = adress;
-        }
+    public void setAdress(String adress) {
+    this.adress = adress;
+    }
 
-        public void setAge(int age) {
-        this.age = age;
-        }
+    public void setAge(int age) {
+    this.age = age;
+    }
 
-        public void setContactNumber(String contactNumber) {
-        this.contactNumber = contactNumber;
-        }
+    public void setContactNumber(String contactNumber) {
+    this.contactNumber = contactNumber;
+    }
+
+    // --- NEW METHOD IMPLEMENTATION ---
+    @Override
+    public String toCSVString() {
+        // Format: ROLE,userID,email,password,fullName,address,age,contactNumber
+        return "GUEST" + "," + getID() + "," + getEmail() + "," + getPassword() + "," +
+               getFullName() + "," + getAdress() + "," + getAge() + "," + getContactNumber();
+    }
 }
-

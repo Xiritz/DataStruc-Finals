@@ -1,0 +1,6 @@
+FORMAT: ROLE ->USER ID, EMAIL, PASSWORD, FULL NAME, ADDRESS, AGE, CONTACT NUMBER, EMPLOYEE ID(FOR RECEPTIONIST AND MANAGER ONLY) 
+
+MANAGER,1,JazMasungit@dlsl.edu.ph,password123,Justine Margaret Candelaria,Laguna,20,0986754432,1000
+RECEPTION,2,LuisPogi@dlsl.edu.ph,password1234,Luis Matthew Quinton,Bagong Pook,19,09984365,2000
+GUEST,86498,arylmanalo@gmail.com,password1234,Aryl Manalo,Candelaria Quezon,19,0923985723
+GUEST,21294,simonlara@gmail.com,password1234,Simon Lara,Padre Garcia,19,3498573567
