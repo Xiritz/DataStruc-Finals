@@ -33,3 +33,132 @@ CANCELLTATION REQUESTED: YES
 Guest Checked-InNNNNNN
 
 ========================================================
+Transaction ID: TID-852671
+Client ID: 79360
+Name: Pedro Manalo
+
+Check-in Date: 11/30/2025
+Check-out Date: 12/3/2025
+
+No. of facilities reserved: 2
+
+Facility #1: Double
+Guests: 4
+Base Price: ?2000.00
+Additional Charges for Extra Guests: ?500.00
+Meal Options:
+Breakfast: FREE
+Dinner: ?1400.00
+Sub-Total Amount: ?3900.00
+
+Facility #2: Double
+Guests: 3
+Base Price: ?2000.00
+Additional Charges: ?0.00
+Meal Options:
+Breakfast: FREE
+Dinner: ?1050.00
+Sub-Total Amount: ?3050.00
+
+
+SUMMARY:
+Total Guests: 7
+Facility Charges: ?4500.00
+Meal Charges: ?2450.00
+
+Payment Option: 30% Reservation Fee
+Total Reservation Cost: ?6950.00
+30% Deposit Amount: ?2085.00
+Balance Due Upon Check-in: ?4865.00
+
+Final Total Amount: ?6950.00
+========================================================
+Guest Checked-In
+
+========================================================
+Transaction ID: TID-852671
+Client ID: 79360
+Name: Pedro Manalo
+
+Check-in Date: 11/30/2025
+Check-out Date: 12/3/2025
+
+No. of facilities reserved: 2
+
+Facility #1: Double
+Guests: 4
+Base Price: ?2000.00
+Additional Charges for Extra Guests: ?500.00
+Meal Options:
+Breakfast: FREE
+Dinner: ?1400.00
+Sub-Total Amount: ?3900.00
+
+Facility #2: Double
+Guests: 3
+Base Price: ?2000.00
+Additional Charges: ?0.00
+Meal Options:
+Breakfast: FREE
+Dinner: ?1050.00
+Sub-Total Amount: ?3050.00
+
+
+SUMMARY:
+Total Guests: 7
+Facility Charges: ?4500.00
+Meal Charges: ?2450.00
+
+Payment Option: 30% Reservation Fee
+Total Reservation Cost: ?6950.00
+30% Deposit Amount: ?2085.00
+Balance Due Upon Check-in: ?4865.00
+
+Final Total Amount: ?6950.00
+========================================================
+Guest Checked-In
+
+========================================================
+Transaction ID: TID-852671
+Client ID: 79360
+Name: Pedro Manalo
+
+Check-in Date: 11/30/2025
+Check-out Date: 12/3/2025
+
+No. of facilities reserved: 2
+
+Facility #1: Double
+Guests: 4
+Base Price: ?2000.00
+Additional Charges for Extra Guests: ?500.00
+Meal Options:
+Breakfast: FREE
+Dinner: ?1400.00
+Sub-Total Amount: ?3900.00
+
+Facility #2: Double
+Guests: 3
+Base Price: ?2000.00
+Additional Charges: ?0.00
+Meal Options:
+Breakfast: FREE
+Dinner: ?1050.00
+Sub-Total Amount: ?3050.00
+
+
+SUMMARY:
+Total Guests: 7
+Facility Charges: ?4500.00
+Meal Charges: ?2450.00
+
+Payment Option: 30% Reservation Fee
+Total Reservation Cost: ?6950.00
+30% Deposit Amount: ?2085.00
+Balance Due Upon Check-in: ?4865.00
+
+Final Total Amount: ?6950.00
+========================================================
+Guest Checked-In
+
+========================================================

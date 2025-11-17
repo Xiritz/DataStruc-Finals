@@ -18,7 +18,7 @@ public class Main {
             
             // Create default accounts
             Manager m = new Manager("JazMasungit@dlsl.edu.ph","password123",0001,"Justine Margaret Candelaria","Sa ilalim ng ferris wheel ng ek",1,"0986754432", 1000);
-            Reception r = new Reception("LuisPogi@dlsl.edu.ph", "password1234", 0002, "Luis Matthew Quinton", "Malapit sa bahay ni raviza", 2, "09984365", 2000);
+            Reception r = new Reception("LuisMatthew@dlsl.edu.ph", "password1234", 0002, "Luis Matthew Quinton", "Malapit sa bahay ni raviza", 2, "09984365", 2000);
             
             // Add to in-memory list
             userAccounts.add(m);
@@ -43,7 +43,9 @@ public class Main {
                 clientMenu.guestMenu((Guest) loggedInUser);
                 
             } else if(loggedInUser instanceof Reception){
-                receptionist_menu.receptionistMenu((Reception) loggedInUser);
+                // --- THIS IS THE CHANGE ---
+                // We now pass the 'userAccounts' list to the menu
+                receptionist_menu.receptionistMenu((Reception) loggedInUser, userAccounts);
                 
             } else if(loggedInUser instanceof Manager){
                 System.out.println("Welcome, Manager " + ((Manager) loggedInUser).getFullName() + "!");
