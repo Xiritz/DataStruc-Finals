@@ -21,7 +21,7 @@ public class receptionist_menu {
 
         System.out.println("\n=== Receptionist Menu ===");
         System.out.println("Welcome " + loggedInUser.getFullName() + "!");
-        
+
         boolean keepMenuOpen = true;
         while (keepMenuOpen) {
             int option = 0;
@@ -31,7 +31,7 @@ public class receptionist_menu {
                 try {
                     System.out.println("\n1. View Client Information");
                     System.out.println("2. View Transaction Records (Unsorted)");
-                    System.out.println("3. Sort Reservation Details by Date"); 
+                    System.out.println("3. Sort Reservation Details by Date");
                     System.out.println("4. Filter Reservations by Payment Status");
                     System.out.println("5. Check-In Guest");
                     System.out.println("6. Exit to Main Menu");
@@ -110,8 +110,8 @@ public class receptionist_menu {
             if (user instanceof Guest) {
                 foundGuests = true;
                 // "Cast" the User object to a Guest object to get Guest-specific methods
-                Guest guest = (Guest) user; 
-                
+                Guest guest = (Guest) user;
+
                 // Print the details
                 System.out.println("Client ID: " + guest.getID());
                 System.out.println("Name:      " + guest.getFullName());
@@ -147,7 +147,7 @@ public class receptionist_menu {
         System.out.println("\n=== Sorted Reservation Details by Date ===");
 
         List<String> list = readReservations();
-        
+
         if (list.isEmpty()) {
             System.out.println("No reservation records found.");
             return;
@@ -156,11 +156,11 @@ public class receptionist_menu {
         list.sort((block1, block2) -> {
             Date date1 = extractCheckInDate(block1);
             Date date2 = extractCheckInDate(block2);
-            
+
             if (date1 == null && date2 == null) return 0;
-            if (date1 == null) return 1; 
+            if (date1 == null) return 1;
             if (date2 == null) return -1;
-            
+
             return date1.compareTo(date2);
         });
 
@@ -239,7 +239,7 @@ public class receptionist_menu {
             for (String line : lines) {
                 line = line.trim();
                 if (line.startsWith("Balance Due") || line.startsWith("Balance Due Upon Check-in")) {
-                    String num = line.replaceAll("[^0-9.]", ""); 
+                    String num = line.replaceAll("[^0-9.]", "");
                     if (!num.isEmpty()) return Double.parseDouble(num);
                 }
             }
@@ -273,14 +273,14 @@ public class receptionist_menu {
     // This method is fine
     public static List<String> readReservations() {
         List<String> list = new ArrayList<>();
-        
+
         try {
             File file = new File(RESERVE_FILE);
             if (!file.exists()) return list;
 
             Scanner reader = new Scanner(file);
             StringBuilder block = new StringBuilder();
-            boolean inBlock = false; 
+            boolean inBlock = false;
 
             while (reader.hasNextLine()) {
                 String line = reader.nextLine();
@@ -292,20 +292,20 @@ public class receptionist_menu {
                     block.setLength(0);
                     block.append(line).append("\n");
                     inBlock = true;
-                
+
                 } else if (line.startsWith("========================================================")) {
                     if (inBlock) {
-                        block.append(line).append("\n"); 
-                        list.add(block.toString());     
-                        inBlock = false;                
-                        block.setLength(0);             
+                        block.append(line).append("\n");
+                        list.add(block.toString());
+                        inBlock = false;
+                        block.setLength(0);
                     }
-                
+
                 } else if (inBlock) {
                     block.append(line).append("\n");
                 }
             }
-            
+
             reader.close();
         } catch (Exception e) {
             System.out.println("Error reading reservation file.");
@@ -350,7 +350,7 @@ public class receptionist_menu {
         if (matchResult.size() > 1) {
             System.out.println("\nMultiple matches found:");
             for (int i = 0; i < matchResult.size(); i++) {
-                System.out.println("[" + (i + 1) + "]\n" + matchResult.get(i));
+                System.out.println("[Reservation #" + (i + 1) + "]\n" + matchResult.get(i));
             }
 
             int choice = 0;
@@ -387,7 +387,7 @@ public class receptionist_menu {
 
         System.out.println("\nChecking in:");
         System.out.println(current);
-        
+
         int index = -1;
         for(int i = 0; i < all.size(); i++) {
             if(all.get(i).equals(current)) {
@@ -401,8 +401,11 @@ public class receptionist_menu {
             return;
         }
 
-        String updated = current + "Guest Checked-In\n";
-        
+        String updated = current.replace(
+                "========================================================",
+                "Guest Checked-In\n========================================================"
+        );
+
         all.set(index, updated);
 
         try (PrintWriter writer = new PrintWriter(new FileWriter(RESERVE_FILE))) {
@@ -420,6 +423,6 @@ public class receptionist_menu {
             System.out.println("Error writing CHECKED-IN file.");
         }
 
-        System.out.println("Guest Checked-In");
+        System.out.println("Guest Checked-In Succssfully");
     }
 }

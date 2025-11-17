@@ -69,8 +69,8 @@ Total Reservation Cost: ?6950.00
 Balance Due Upon Check-in: ?4865.00
 
 Final Total Amount: ?6950.00
-========================================================
 Guest Checked-In
+========================================================
 
 Transaction ID: TID-205165
 Client ID: 86498
