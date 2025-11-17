@@ -1,0 +1,37 @@
+Transaction ID: TID-857035
+Client ID: 79360
+Name: Pedro Manalo
+
+Check-in Date: 12/1/2025
+Check-out Date: 12/10/2025
+
+No. of facilities reserved: 1
+
+Facility #1: Suite
+Guests: 5
+Base Price: ?4000.00
+Additional Charges: ?0.00
+Meal Options:
+Breakfast: FREE
+Dinner: ?1750.00
+Sub-Total Amount: ?5750.00
+
+
+SUMMARY:
+Total Guests: 5
+Facility Charges: ?4000.00
+Meal Charges: ?1750.00
+
+Payment Option: 30% Reservation Fee
+Total Reservation Cost: ?5750.00
+30% Deposit Amount: ?1725.00
+Balance Due Upon Check-in: ?4025.00
+
+Final Total Amount: ?5750.00
+CANCELLTATION REQUESTED: YES
+========================================================
+
+CANCELLATION APPROVED BY: Justine Margaret Candelaria (EID: 1000)
+APPROVAL DATE: 11/18/2025 02:23:41
+========================================================
+

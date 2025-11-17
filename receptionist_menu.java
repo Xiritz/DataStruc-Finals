@@ -34,7 +34,7 @@ public class receptionist_menu {
                     System.out.println("3. Sort Reservation Details by Date");
                     System.out.println("4. Filter Reservations by Payment Status");
                     System.out.println("5. Check-In Guest");
-                    System.out.println("6. Exit to Main Menu");
+                    System.out.println("6. Log Out");
                     System.out.print("Select option: ");
 
                     option = sc.nextInt();
@@ -77,7 +77,7 @@ public class receptionist_menu {
                     break;
                 }
                 case 6:{ // Exit to Main Menu
-                    System.out.println("Returning to Main Menu...");
+                    System.out.println("Logging Out");
                     keepMenuOpen = false; // This will exit the while loop
                     break;
                 }

@@ -123,7 +123,7 @@ public class Authenticator {
         // Save to the *physical file* for next time
         fileHandler.saveNewUser(newGuest);
 
-        System.out.println("Registration successful! Your new UserID is " + newUserID);
+        System.out.println("Registration successful!");
         System.out.println("Please log in to continue.");
     }
 }

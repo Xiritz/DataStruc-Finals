@@ -43,13 +43,10 @@ public class Main {
                 clientMenu.guestMenu((Guest) loggedInUser);
                 
             } else if(loggedInUser instanceof Reception){
-                // --- THIS IS THE CHANGE ---
-                // We now pass the 'userAccounts' list to the menu
                 receptionist_menu.receptionistMenu((Reception) loggedInUser, userAccounts);
                 
             } else if(loggedInUser instanceof Manager){
-                System.out.println("Welcome, Manager " + ((Manager) loggedInUser).getFullName() + "!");
-                System.out.println("Manager menu is not implemented yet.");
+                manager_menu.managerMenu((Manager) loggedInUser, userAccounts);
             }
 
             System.out.println("Logging out... Returning to main login screen.");
